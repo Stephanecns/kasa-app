@@ -1,0 +1,43 @@
+// src/components/Dropdown.scss
+
+.dropdown {
+    margin-top: 38px;
+    border: 1px solid #FF6060;
+    border-radius: 5px;
+    overflow: hidden;
+  
+    &__title {
+      background-color: #FF6060;
+      color: #FFF;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      text-align: left;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 1.2rem;
+  
+      &:focus {
+        outline: none;
+      }
+    }
+  
+    &__arrow {
+        transition: transform 0.3s ease;
+        transform: rotate(-90deg);
+      }
+    
+      &__arrow--open {
+        transform: rotate(90deg);
+      }
+  
+    &__content {
+      padding: 20px;
+      background-color: #f8f8f8;
+      border-top: 1px solid #ddd;
+      font-size: 1rem;
+    }
+  }
+  
