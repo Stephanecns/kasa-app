@@ -1,0 +1,28 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+.header__nav-list {
+  display: flex;
+}
+.header__nav-item {
+  padding-left: 45px;
+  font-size: 24px;
+}
+.header__nav-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .header__logo {
+    width: 145px;
+  }
+  .header__nav-list {
+    width: 100%;
+  }
+  .header__nav-item {
+    padding-left: 26px;
+    font-size: 12px;
+  }
+}/*# sourceMappingURL=Header.css.map */

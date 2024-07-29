@@ -1,0 +1,35 @@
+//Variables de couleurs
+$primary-color: #FF6060;
+$secondary-color: #FFFFFF;
+
+//Styles globaux
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 40px 80px 0px 80px;
+    padding: 0;
+    box-sizing: border-box; 
+  }
+
+a {
+    text-decoration: none;
+    color: inherit;
+  
+    &:hover {
+      text-decoration: none;
+    }
+  
+    &:focus {
+      outline: none;
+    }
+}  
+
+ul, ol {
+    list-style: none; // Supprimer les puces des listes
+  }
+
+
+  @media (max-width: 768px) {
+    body {
+      margin: 40px 40px 0px 40px; // Marges pour les écrans <= 768px
+    }
+  }
