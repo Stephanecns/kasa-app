@@ -13,4 +13,21 @@
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+}
+.banner__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.3);
+}
+.banner__text {
+  color: #FFF;
+  font-size: 2rem;
+  text-align: center;
+  padding: 10px 20px;
 }/*# sourceMappingURL=Banner.css.map */

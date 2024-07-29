@@ -1,4 +1,3 @@
-// src/components/Dropdown.js
 import React, { useState } from 'react';
 import './Dropdown.scss';
 

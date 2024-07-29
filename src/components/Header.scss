@@ -27,16 +27,16 @@
 @media (max-width: 768px) {
   .header {
     &__logo {
-      width: 145px; // Taille du logo pour les écrans <= 768px
+      width: 145px;
     }
 
     &__nav {
       &-list {
-        width: 100%; // Conserver la largeur de 100% pour les écrans <= 768px
+        width: 100%;
       }
       &-item {
-        padding-left: 26px; // Ajuster l'espacement des éléments de navigation
-        font-size: 12px; // Taille de police pour les écrans <= 768px
+        padding-left: 26px;
+        font-size: 12px;
       }
     }
   }
