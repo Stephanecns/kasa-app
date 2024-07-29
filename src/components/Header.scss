@@ -1,0 +1,43 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+
+  &__nav {
+
+
+    &-list {
+      display: flex;
+    }
+
+    &-item {
+      padding-left: 45px;
+      font-size: 24px;
+    }
+
+    &-link {
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    &__logo {
+      width: 145px; // Taille du logo pour les écrans <= 768px
+    }
+
+    &__nav {
+      &-list {
+        width: 100%; // Conserver la largeur de 100% pour les écrans <= 768px
+      }
+      &-item {
+        padding-left: 26px; // Ajuster l'espacement des éléments de navigation
+        font-size: 12px; // Taille de police pour les écrans <= 768px
+      }
+    }
+  }
+}
