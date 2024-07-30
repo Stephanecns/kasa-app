@@ -22,13 +22,13 @@
     }
   
     &__text {
-      font-size: 24px; // Taille du texte
-      color: #FFF; // Couleur du texte
+      font-size: 24px; 
+      color: #FFF; 
     }
   }
   @media (max-width: 768px) {
     .footer__text {
-      font-size: 12px; // Taille du texte pour les écrans <= 768px
+      font-size: 12px; 
     }
   }
   

@@ -1,1 +1,159 @@
-/*# sourceMappingURL=Housing.css.map */
+.housing {
+  padding: 20px;
+}
+.housing__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 20px 0;
+}
+@media (max-width: 768px) {
+  .housing__info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+.housing__details {
+  flex: 2;
+}
+.housing__title {
+  font-size: 36px;
+  margin: 10px 0;
+}
+.housing__location {
+  font-size: 18px;
+  color: #FF6060;
+  margin: 10px 0;
+}
+.housing__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 10px 0;
+}
+.housing__tag {
+  background: #FF6060;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.housing__host-rating-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  flex: 1;
+}
+@media (max-width: 768px) {
+  .housing__host-rating-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+.housing__host {
+  display: flex;
+  align-items: center;
+  text-align: right;
+}
+.housing__host p {
+  margin-right: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.housing__host-picture {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+.housing__rating {
+  display: flex;
+}
+.housing__rating .star {
+  font-size: 24px;
+  color: grey;
+}
+.housing__rating .star.filled {
+  color: #FF6060;
+}
+@media (max-width: 768px) {
+  .housing__rating {
+    order: -1;
+    margin-bottom: 10px;
+  }
+}
+.housing__dropdowns {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+@media (max-width: 768px) {
+  .housing__dropdowns {
+    flex-direction: column;
+  }
+}
+
+.dropdown {
+  margin: 20px 0;
+  flex: 1;
+}
+.dropdown__content {
+  padding: 20px;
+  background: #F6F6F6;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 415px;
+  overflow: hidden;
+}
+.carousel__slide {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.carousel__slide.active {
+  opacity: 1;
+  position: relative;
+}
+.carousel__image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.carousel__button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  z-index: 10;
+}
+.carousel__button--left {
+  left: 10px;
+}
+.carousel__button--right {
+  right: 10px;
+}
+.carousel__counter {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  color: white;
+  font-size: 1rem;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+@media (max-width: 768px) {
+  .carousel {
+    height: 255px;
+  }
+}/*# sourceMappingURL=Housing.css.map */

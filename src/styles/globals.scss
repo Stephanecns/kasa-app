@@ -23,12 +23,12 @@ a {
 }  
 
 ul, ol {
-    list-style: none; // Supprimer les puces des listes
+    list-style: none; 
   }
 
 
   @media (max-width: 768px) {
     body {
-      margin: 40px 40px 0px 40px; // Marges pour les écrans <= 768px
+      margin: 40px 40px 0px 40px; 
     }
   }
