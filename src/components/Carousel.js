@@ -3,17 +3,18 @@ import React, { useState } from 'react';
 import './Carousel.scss';
 
 const Carousel = ({ pictures }) => {
+  // État local pour suivre l'index de l'image actuellement affichée
   const [current, setCurrent] = useState(0);
   const length = pictures.length;
-
+  // Fonction pour passer à l'image suivante
   const nextSlide = () => {
     setCurrent(current === length - 1 ? 0 : current + 1);
   };
-
+  // Fonction pour revenir à l'image précédente
   const prevSlide = () => {
     setCurrent(current === 0 ? length - 1 : current - 1);
   };
-
+  // Vérification si le tableau d'images est valide et non vide
   if (!Array.isArray(pictures) || pictures.length <= 0) {
     return null;
   }

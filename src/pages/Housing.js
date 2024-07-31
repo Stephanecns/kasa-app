@@ -7,19 +7,26 @@ import logements from '../logements.json';
 import './Housing.scss';
 
 const Housing = () => {
+  // Récupération de l'ID de l'hébergement depuis les paramètres de l'URL
   const { id } = useParams();
+  // Hook de navigation pour rediriger l'utilisateur
   const navigate = useNavigate();
+  // État local pour stocker les informations de l'hébergement
   const [accommodation, setAccommodation] = useState(null);
 
   useEffect(() => {
+    // Recherche de l'hébergement correspondant à l'ID dans le fichier JSON
     const foundAccommodation = logements.find(logement => logement.id === id);
     if (foundAccommodation) {
+      // Si l'hébergement est trouvé, mise à jour de l'état
       setAccommodation(foundAccommodation);
     } else {
+      // Si l'ID est incorrect, redirection vers la page 404
       navigate('/404'); // Redirige vers la page 404 si l'ID est incorrect
     }
   }, [id, navigate]);
 
+  // Si les informations de l'hébergement ne sont pas encore chargées, ne rien afficher
   if (!accommodation) {
     return null; 
   }

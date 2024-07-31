@@ -6,9 +6,12 @@ import logements from '../logements.json';
 import './Home.scss';
 
 const Home = () => {
+
+  // État local pour stocker les informations des hébergements
   const [accommodations, setAccommodations] = useState([]);
 
   useEffect(() => {
+    // Mise à jour de l'état avec les données des logements
     setAccommodations(logements);
   }, []);
 

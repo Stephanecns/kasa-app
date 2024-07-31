@@ -1,9 +1,13 @@
 import React, { useState } from 'react';
 import './Dropdown.scss';
 
+// Le composant Dropdown reçoit deux props : title et content
 const Dropdown = ({ title, content }) => {
-  const [isOpen, setIsOpen] = useState(false);
+// Déclaration d'un état local isOpen, initialisé à false
+const [isOpen, setIsOpen] = useState(false);
 
+
+  // Fonction pour basculer l'état ouvert/fermé du dropdown
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
   };

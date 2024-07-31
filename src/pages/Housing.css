@@ -19,10 +19,10 @@
 .housing__title {
   font-size: 36px;
   margin: 10px 0;
+  color: #FF6060;
 }
 .housing__location {
   font-size: 18px;
-  color: #FF6060;
   margin: 10px 0;
 }
 .housing__tags {
@@ -55,11 +55,13 @@
   display: flex;
   align-items: center;
   text-align: right;
+  color: #FF6060;
 }
 .housing__host p {
-  margin-right: 10px;
   font-size: 16px;
   font-weight: bold;
+  width: 93px;
+  text-align: left;
 }
 .housing__host-picture {
   width: 64px;
