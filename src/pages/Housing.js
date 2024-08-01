@@ -58,7 +58,7 @@ const Housing = () => {
       </div>
       <div className="housing__dropdowns">
         <Dropdown title="Description" content={accommodation.description} />
-        <Dropdown title="Équipements" content={accommodation.equipments.join(', ')} />
+        <Dropdown title="Équipements" content={accommodation.equipments} />
       </div>
     </div>
   );

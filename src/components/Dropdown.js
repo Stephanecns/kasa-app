@@ -20,7 +20,7 @@ const [isOpen, setIsOpen] = useState(false);
           &gt;
         </span>
       </button>
-      {isOpen && <div className="dropdown__content">{content}</div>}
+      {isOpen && <div>{Array.isArray(content)?<ul>{content.map((text,i)=><li key={i}>{text}</li>)}</ul>:<div className="dropdown__content">{content}</div>}</div>}
     </div>
   );
 };
